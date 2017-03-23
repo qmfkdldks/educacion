@@ -16,7 +16,7 @@
 //= require jquery.easing
 //= require ckeditor/init
 //= require turbolinks
-//= require_tree .
+//= require_tree ./ckeditor
 
 
 $(document).on("turbolinks:load", function() {
