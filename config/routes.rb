@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :posts
+  mount Ckeditor::Engine => '/ckeditor'
+  devise_for :users, controllers: { sessions: 'users/sessions' }
   resources :donations
   get 'home/index'
 

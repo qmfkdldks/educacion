@@ -2,22 +2,98 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.col-lg-4{ padding: 0 !important;}
-.blocks{ border:1px solid #EEEEEE;}
-.blocks:hover{box-shadow:0px 0px 10px #D9E0DB;}
-.block-header{ height: 95px; text-align: center; width: 100%; padding: 8%; background: #F8F8F8; color: #333333;}
-.block-container p:hover{background:#F8F8F8;}
-.block-header h4{ font-weight: bold; vertical-align: center;}
-.block-container{ text-align: center;}
-.block-container p{ border-bottom:1px solid #F4F7F8; margin: 0; padding: 2%; }
-.block-container p:last-child{ border-bottom:none;}
-.price{font-size: 50px; font-family: PT Serif; color: #FF592D; font-weight: bold;}
-.renew-price{font-size: 12px; color: #333333; font-style: italic; font-weight: normal;}
-.block-footer{text-align: center; padding: 10%;}
-.order-now{border: 1px solid #FF592D; padding: 15px; border-radius: 4%; color:#333333; font-weight: bold; }
-.order-now:hover{text-decoration: none; background: #FF592D; color: #fff;}
-.active-block { box-shadow:0px 0px 10px #D9E0DB;}
-.active-block .block-header{ background: #45BA76; color: #fff;}
-.active-block .price{ color:#45BA76;}
-.active-block .block-footer a{ background: #45BA76; color: #fff; border:none;}
-.active-block .block-footer a:hover{ background: #EEEEEE; color: #333333; border:1px solid #45BA76;}
+/*
+Author: Bootstrapthemes
+Author URI: http://bootstrapthemes.co
+*/
+
+.bs-five-area{
+    width:100%;
+    display: inline-block;
+    box-shadow: 0px 0px 6px 0px #ddd;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.bs-five-area.bs-radius{
+    border-radius: 30px;
+}
+.bs-five-area > div{
+    padding:0;
+}
+
+.bs-five-area .bs-five{
+    position: relative;
+    width: 100%;  
+    margin: auto; 
+    transition: all 0.4s;
+    padding:20px 0px;
+}
+.bs-five-area .bs-five h6{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.bs-five-area .bs-five h1{
+    font-size:64px;
+    font-weight: 100;
+    line-height: 72px;
+}
+.bs-five-area .bs-five h1 sup{
+    font-size:30px;
+    top:-30px;
+}
+.bs-five-area .bs-five ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.bs-five-area .bs-five ul li{
+    line-height: 45px;
+    border-bottom:0px;
+}
+
+
+.bs-five-area .bs-five:hover{
+
+    background: #179880; 
+    transition: all 0.4s;
+
+}
+
+.bs-five-area .bs-five.active {
+    background: #179880; 
+    background: -webkit-linear-gradient(left, #179880 , #21A476); 
+    background: -o-linear-gradient(right, #179880, #21A476); 
+    background: -moz-linear-gradient(right, #179880, #21A476); 
+    background: linear-gradient(to right, #179880 , #21A476);  
+}
+
+.bs-five-area .bs-five .btn-success{
+    padding: 10px 50px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #179880;
+    border-color: #21A476;
+}
+
+
+.bs-five-area .bs-five.active .btn.btn-success, 
+.bs-five-area .bs-five:hover.bs-five .btn.btn-success{
+    background: #E0FFF6 ; 
+    color:#444 ;
+
+}
+
+.bs-five-area .bs-five.active,
+.bs-five-area .bs-five.active ul li,
+.bs-five-area .bs-five:hover.bs-five, 
+.bs-five-area .bs-five:hover.bs-five ul li
+{
+    color:#fff;
+}
+
+
+
+

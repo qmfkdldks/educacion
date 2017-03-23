@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Authentication
+gem 'devise'
+
 # Gem for styling
 gem "twitter-bootstrap-rails"
 # Gem jquery animation
@@ -43,7 +46,14 @@ gem 'jquery-easing-rails'
 gem "font-awesome-rails"
 # Gem mercadopago
 gem 'mercadopago'
-
+# A ruby wrapper for ImageMagick or GraphicsMagick command line.
+gem 'mini_magick'
+# Post editor
+gem 'ckeditor'
+# Image store gem
+gem 'carrierwave', '~> 1.0'
+# Web iamge drive
+gem 'cloudinary'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
