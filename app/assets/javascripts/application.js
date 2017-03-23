@@ -16,4 +16,5 @@
 //= require jquery.easing
 //= require ckeditor/init
 //= require turbolinks
+//= require home
 //= require_tree ./ckeditor
