@@ -50,7 +50,8 @@ gem 'mercadopago'
 # A ruby wrapper for ImageMagick or GraphicsMagick command line.
 gem 'mini_magick'
 # Post editor
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+# gem 'ckeditor_rails'
 # Image store gem
 gem 'carrierwave', '~> 1.0'
 # Web iamge drive
