@@ -10,5 +10,6 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 # Rails.application.config.assets.precompile += %w( ckeditor/filebrowser/thumbs/xls.gif )
-Rails.application.config.assets.precompile += Ckeditor.assets
-Rails.application.config.assets.precompile += %w(ckeditor/*)
+# Rails.application.config.assets.precompile += Ckeditor.assets
+# Rails.application.config.assets.precompile += %w(ckeditor/*)
+# Rails.application.config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
