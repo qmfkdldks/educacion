@@ -15,14 +15,14 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li class="page-scroll">
-                    <%= link_to 'Home', home_url %>
-                </li>
-                <li class="page-scroll">
-                    <%= link_to 'Post', posts_url %>
+                <li>
+                    <%= link_to 'Home', home_path %>
                 </li>
                 <li>
-                    <%= link_to 'Donate', new_donation_url, class: 'btn btn-primary' %>
+                    <%= link_to 'Post', posts_path %>
+                </li>
+                <li>
+                    <%= link_to 'Donate', new_donation_path, class: 'btn btn-primary' %>
                 </li>
             </ul>
         </div>

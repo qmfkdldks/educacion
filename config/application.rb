@@ -12,7 +12,7 @@ module Educacion
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.assets.precompile += Ckeditor.assets
-	config.assets.precompile += %w(ckeditor/**/*) 
+	Rails.application.config.assets.precompile += %w(ckeditor/* ckeditor/lang/*)
 	config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end
