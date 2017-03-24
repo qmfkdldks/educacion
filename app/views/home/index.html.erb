@@ -8,7 +8,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+            <a class="navbar-brand" href="#page-top">Nombre</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,9 +43,9 @@
             <div class="col-lg-12">
                 <img class="img-responsive" src="/img/profile.png" alt="">
                 <div class="intro-text">
-                    <h1 class="name">Start Bootstrap</h1>
+                    <h1 class="name">Nombre</h1>
                     <hr class="star-light">
-                    <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                    <span class="skills">Cambiar - Mejorar - Avanzar</span>
                 </div>
             </div>
         </div>
@@ -57,71 +57,30 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Portfolio</h2>
+                <h2>Noticias</h2>
                 <hr class="star-primary">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/portfolio/game.png" class="img-responsive" alt="Game controller">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/portfolio/safe.png" class="img-responsive" alt="Safe">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="/img/portfolio/submarine.png" class="img-responsive" alt="Submarine">
-                </a>
-            </div>
+
+            <% @posts.each do |post| %>
+              <div class="col-sm-4 portfolio-item">
+                  <%= link_to post, class: "portfolio-link" do %>
+                      <div class="caption">
+                          <div class="caption-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="/img/portfolio/cabin.png" class="img-responsive">
+                  <% end %>
+                  <h3><%= post.head %></h3>
+                  
+              </div>
+            <% end %>
+
+        </div>
+        <div class="row">
+            <%= link_to 'Ver más', posts_path, class: 'btn btn-primary pull-right' %>
         </div>
     </div>
 </section>
@@ -137,15 +96,15 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <p>La educación es el proceso de facilitar el aprendizaje. Los conocimientos, habilidades, valores, creencias y hábitos de un grupo de personas que los transfieren a otras personas, a través de la narración de cuentos, la discusión, la enseñanza, la formación o la investigación. La educación no solo se produce a través de la palabra, pues está presente en todas nuestras acciones, sentimientos y actitudes. </p>
             </div>
             <div class="col-lg-4">
                 <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline">
-                    <i class="fa fa-download"></i> Download Theme
-                </a>
+                <button type="button" class="btn btn-lg btn-outline" data-toggle="modal" data-target="#myModal">
+                    Conocer más
+                </button>
             </div>
         </div>
     </div>
@@ -205,3 +164,29 @@
         </div>
     </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G0Ece11tlvU" frameborder="0" allowfullscreen></iframe>  
+            </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+</div>
