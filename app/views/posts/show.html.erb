@@ -3,7 +3,7 @@
 <section>
 	<div class="container">
 		<p id="notice"><%= notice %></p>
-
+		<%= @post.image.url %>
 		<h1 style="text-align: center;"> <%= @post.head %></h1>
 
 	  	<%= raw @post.body %>

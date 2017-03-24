@@ -71,7 +71,8 @@
                               <i class="fa fa-search-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="/img/portfolio/cabin.png" class="img-responsive">
+                      <!-- <img src="/img/portfolio/cabin.png" class="img-responsive"> -->
+                      <%= image_tag(post.image_url(:thumbnail), class: 'img-responsive', onerror: "this.src='Default.jpg'") %>
                   <% end %>
                   <h3><%= post.head %></h3>
                   

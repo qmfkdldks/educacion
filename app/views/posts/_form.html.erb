@@ -13,14 +13,18 @@
         </div>
       <% end %>
 
-      <div class="field">
-        <%= f.label :head %>
-        <%= f.text_field :head %>
+      <div class="field form-group">
+        <%= f.file_field :image, class: 'form-control-file' %>
       </div>
 
-      <div class="field">
+      <div class="field form-group">
+        <%= f.label :head %>
+        <%= f.text_field :head, class: 'form-control' %>
+      </div>
+
+      <div class="field form-group">
         <%= f.label :body %>
-        <%= f.cktext_area :body %>
+        <%= f.cktext_area :body, class: 'form-control' %>
       </div>
 
       <div class="actions">
